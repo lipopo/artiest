@@ -1,1 +1,1 @@
-web: jupyter notebook --port $PORT --no-browser
+web: jupyter notebook --port $PORT --no-browser --ip='*'
