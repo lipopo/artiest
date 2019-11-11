@@ -4,6 +4,7 @@ from flask import Flask, jsonify
 
 
 app = Flask(__name__)
+__version__ = '0.0.1'
 
 
 @app.route('/version')
