@@ -1,7 +1,7 @@
 import sys
 import os
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 
 
 # import local package
@@ -13,14 +13,15 @@ pwd_folder = os.path.dirname(__file__)
 app = Flask(
     __name__,
     static_folder=os.path.join(pwd_folder, 'static'),
-    static_url_path='/'
+    static_url_path='/',
+    template_folder=os.path.join(pwd_folder, 'static')
 )
 __version__ = '0.0.1'
 
 
 @app.route('/')
 def index():
-    return ''
+    return render_template('html/coming_soon.html')
 
 
 @app.route('/version')

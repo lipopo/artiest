@@ -105,3 +105,4 @@ venv.bak/
 
 # visual studio config file
 .vs/
+.idea/
