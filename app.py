@@ -9,7 +9,12 @@ sys.path.insert(0, os.path.dirname(__file__))
 from setting import setting
 
 
-app = Flask(__name__)
+pwd_folder = os.path.dirname(__file__)
+app = Flask(
+    __name__,
+    static_folder=os.path.join(pwd_folder, 'static'),
+    static_url_path='/'
+)
 __version__ = '0.0.1'
 
 
