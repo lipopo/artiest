@@ -1,10 +1,21 @@
+import sys
 import os
 
 from flask import Flask, jsonify
 
 
+# import local package
+sys.path.insert(0, os.path.dirname(__file__))
+from setting import setting
+
+
 app = Flask(__name__)
 __version__ = '0.0.1'
+
+
+@app.route('/')
+def index():
+    return ''
 
 
 @app.route('/version')
