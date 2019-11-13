@@ -1,0 +1,10 @@
+main:
+  links:
+  - name: Home
+    link: /
+  - name: Test
+    link: /test
+  sections:
+  - id: image-header
+    name: image-header
+    type: images

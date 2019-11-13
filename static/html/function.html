@@ -1,0 +1,15 @@
+{% macro section(section_data) %}
+<section id="{{ section_data.id }}">
+    {% if section_data.type == "images" %}
+    {{ image_section(section) }}
+    {% endif %}
+</section>
+{%- endmacro %}
+
+{% macro image_section(section_data) %}
+<div class="padding-window row-flex">
+	<div class="center-bottom">
+        image_controller
+    </div>
+</div>
+{%- endmacro %}

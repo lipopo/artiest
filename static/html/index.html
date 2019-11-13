@@ -1,0 +1,7 @@
+{% extends "html/base.html" %}
+{% import "html/function.html" as func %}
+{% block body %}
+{% for section in main.sections %}
+{{ func.section(section) }}
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    background: #FF6B5D;
+    box-shadow: 2px 3px 2px #ccc;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.header-link {
+    padding: 0px 10px;
+}
+
+.header-link > a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+.header-link > a:hover {
+    text-decoration: underline;
+}
+
+.body {
+    position: absolute;
+    top: 70px;
+}
