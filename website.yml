@@ -8,3 +8,7 @@ main:
   - id: image-header
     name: image-header
     type: images
+meta_data:
+  database:
+    url: postgresql://lipo:lipo8081@dev_server.lipocmma.cn:5432/lipo
+

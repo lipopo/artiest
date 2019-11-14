@@ -28,7 +28,6 @@ def index():
 
 @app.route('/test')
 def test():
-    print(render_template('html/index.html', **setting.website_setting))
     return render_template('html/index.html', **setting.website_setting)
 
 
