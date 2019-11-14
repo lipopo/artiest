@@ -108,3 +108,5 @@ venv.bak/
 .idea/
 # runtime workdir
 runtime/
+# doit file
+.doit.db

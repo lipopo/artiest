@@ -18,7 +18,7 @@ app = Flask(
     static_url_path='/'
 )
 app.jinja_loader = jinja2.FileSystemLoader(template_folder, encoding='utf-8')
-__version__ = '0.0.1'
+__version__ = open("version.txt", "r").read()
 
 
 @app.route('/')
