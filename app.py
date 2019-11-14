@@ -1,7 +1,7 @@
 import sys
 import os
 
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, Response
 import jinja2
 
 
@@ -19,16 +19,22 @@ app = Flask(
 )
 app.jinja_loader = jinja2.FileSystemLoader(template_folder, encoding='utf-8')
 __version__ = open("version.txt", "r").read()
+qrcode_content = open(setting.website_setting['meta_data']['qrcode']['path'],'rb').read()
 
 
 @app.route('/')
 def index():
-    return render_template('html/coming_soon.html')
+    return render_template('html/index.html', **setting.website_setting)
 
 
 @app.route('/test')
 def test():
-    return render_template('html/index.html', **setting.website_setting)
+    return render_template('html/test.html', **setting.website_setting)
+
+
+@app.route('/contact')
+def contact():
+    return render_template('html/contact.html', **setting.website_setting)
 
 
 @app.route('/version')
@@ -38,6 +44,11 @@ def version():
             'version': __version__
         }
     )
+
+
+@app.route('/qrcode')
+def qrcode():
+    return Response(qrcode_content, content_type=setting.website_setting['meta_data']['qrcode']['content_type'])
 
 
 if __name__ == '__main__':

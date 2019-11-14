@@ -2,6 +2,9 @@ body {
     margin: 0;
 }
 
+.right-border {
+    border-right: 1px solid #ccc;
+}
 .header {
     height: 70px;
     width: 100%;
@@ -32,7 +35,41 @@ body {
     text-decoration: underline;
 }
 
-.body {
-    position: absolute;
-    top: 70px;
+
+.nav-c1 {
+    background: #FF6B5D;
 }
+
+.nav-item > a {
+    color: #fff;
+    font-family: fantasy;
+}
+
+.nav-item > a:hover {
+    text-decoration-line: underline;
+}
+
+.footer {
+    margin-top: 10px;
+    color: #555;
+}
+
+.footer-header {
+    color: #999;
+}
+
+.main-header {
+    color: #FF6B5D;
+}
+
+.main-header-right {
+    border: 1px solid #FF6D5B;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+

@@ -1,0 +1,159 @@
+{% extends 'html/base.html' %}
+
+
+{% block body %}
+<hr>
+<h1>Alert</h1>
+<div class="alert alert-primary" role="alert">
+Primary Info
+</div>
+<div class="alert alert-success" role="alert">
+Success! <a href="#" class="alert-click">Click Here!</a>
+</div>
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">Error Happend!</h4>
+<p>There are somthing happend</p>
+<hr>
+</div>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+<strong>Hollow!</strong> Please Tell Me What Do Like!
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+</button>
+</div>
+<hr>
+<h1> Brand </h1>
+<h1>Example heading <span class="badge badge-secondary">New</span></h1>
+<h2>Pill badges<span class="badge badge-pill badge-success">New</span></h2>
+<hr>
+<h1>Breadcrumb</h1>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Home</li>
+    </ol>
+</nav>
+
+<hr>
+<h1>Button</h1>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Link</button>
+
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-primary btn-lg">Large Button</button>
+<button type="button" class="btn btn-dark btn-sm">Small Button</button>
+<button type="button" class="btn btn-info btn-block">Block Button</button>
+
+<hr>
+<h1>Button Group</h1>
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+</div>
+
+<hr>
+<h1>Card</h1>
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{ url_for('static', filename='images/artiest_logo_line.png') }}">
+    <div class="card-body">
+    	<h5 class="card-title">Card Title</h5>
+        <p class="card-text">This Card is For Test</p>
+    </div>
+</div>
+
+<hr>
+<h1>Carousel</h1>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <img src="{{ url_for('static', filename='images/artiest_logo_link.png') }}" class="d-block w-100">
+        </div>
+    </div>
+</div>
+
+<hr>
+<h1>Collapse</h1>
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-target
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  </div>
+</div>
+
+<hr>
+<h1>Dropdown Button</h1>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+<hr>
+<h1>Input Group</h1>
+<div class="input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">@</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-descrivedby="basic-addon1">
+</div>
+
+<hr>
+<h1>Jumbotron</h1>
+<div class="jumbotron">
+    <p>Jello</p>
+</div>
+
+<hr>
+<h1>Navs</h1>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link" href="#">Active</a>
+    </li>
+</ul>
+
+<hr>
+<h1>Navbar</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Navbar</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aira-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(currnet)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+    </ul>
+</div>
+</nav>
+
+<hr>
+<h1>Spinners</h1>
+<div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+</div>
+{% endblock %}
+

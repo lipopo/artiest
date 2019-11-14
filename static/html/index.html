@@ -1,7 +1,22 @@
 {% extends "html/base.html" %}
 {% import "html/function.html" as func %}
 {% block body %}
-{% for section in main.sections %}
-{{ func.section(section) }}
-{% endfor %}
+<div class="container-fluid">
+    <div class="row" style="padding: 50px 50px 10px 50px;">
+        <div class="col">
+            <h1>
+                <span class="main-header">{{ main.content_section.title }}</span>
+            </h1>
+            {{ main.content_section.content|safe }}
+        </div>
+        <div class="col">
+            <div class="main-header-right">
+                <div style="text-align:center;color:#FF6D5B"><h1>Be The Best Dev Of Python</h1></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+       Second Item
+    </div>
+</div>
 {% endblock %}

@@ -1,14 +1,34 @@
 main:
+  content_section:
+    title: Artiest
+    content:
+      <p>Artiest是一个用于展示个人作品的站点，其主要作者为Lipo，一个热爱互联网技术的个人开发者，这个网站主要用于展示部分数据。</p>
   links:
-  - name: Home
+  - name: 主页
     link: /
-  - name: Test
+  - name: 测试页面
     link: /test
+  - name: 联系我们
+    link: /contact
+  contact_infos:
+  - name: 微信号
+    value: cm1253363
+    icon: wechat
+  - name: QQ
+    value: 664094704
+    icon: qq
   sections:
   - id: image-header
     name: image-header
     type: images
 meta_data:
+  site_data:
+    name: Lipo的个人情报站
+    url: artiest.heroku.com
+    time_range: 2018-2019
+  qrcode: 
+    path: static/images/qrcode.jpg
+    content_type: image/jpeg
   database:
     url: postgresql://lipo:lipo8081@dev_server.lipocmma.cn:5432/lipo
 
