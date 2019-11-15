@@ -3,6 +3,16 @@ main:
     title: Artiest
     content:
       <p>Artiest是一个用于展示个人作品的站点，其主要作者为Lipo，一个热爱互联网技术的个人开发者，这个网站主要用于展示部分数据。</p>
+  icon_section:
+  - icon: code
+    title: 专业的编码
+    content: 我们提供专业的编码能力
+  - icon: github
+    title: 关注github
+    content: 关注我们的github，我们有更多有趣的项目
+  - icon: tags
+    title: 值得信任
+    content: 我们永远值得信任
   links:
   - name: 主页
     link: /

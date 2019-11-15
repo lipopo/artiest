@@ -16,7 +16,27 @@
         </div>
     </div>
     <div class="row">
-       Second Item
+       <div class="col-md-4 col-sm-12 pad-50">
+           <div class="d-flex flex-row justify-content-center">
+               <i class="fa fa-{{main.icon_section[0].icon}} fa-5x"></i>
+           </div>
+           <div class="title-center">{{ main.icon_section[0].title }}</div>
+           <div>{{ main.icon_section[0].content }}</div>
+       </div>
+       <div class="col-md-4 col-sm-12 pad-50">
+           <div class="d-flex flex-row justify-content-center">
+               <i class="fa fa-{{main.icon_section[1].icon}} fa-5x"></i>
+           </div>
+           <div class="title-center">{{ main.icon_section[1].title }}</div>
+           <div>{{ main.icon_section[1].content }}</div>
+       </div>
+       <div class="col-md-4 col-sm-12 pad-50">
+           <div class="d-flex flex-row justify-content-center">
+               <i class="fa fa-{{main.icon_section[2].icon}} fa-5x"></i>
+           </div>
+           <div class="title-center">{{ main.icon_section[2].title }}</div>
+           <div>{{ main.icon_section[2].content }}</div>
+       </div>
     </div>
 </div>
 {% endblock %}

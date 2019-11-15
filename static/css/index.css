@@ -72,4 +72,12 @@ body {
     align-items: center;
 }
 
+.title-center {
+    text-align: center;
+    color: #555;
+    padding: 5px;
+}
 
+.pad-50 {
+    padding: 5px 50px;
+}
